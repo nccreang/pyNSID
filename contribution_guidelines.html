@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Guidelines for Contribution &mdash; pyNSID 0.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-dataframe.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contact us" href="contact.html" />
+    <link rel="prev" title="NSID" href="nsid.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyNSID
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">pyNSID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_guides.html">Tutorials on Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nsid.html">NSID</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guidelines for Contribution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#before-you-begin">Before you begin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#structuring-code">Structuring code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-guidelines">General guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pynsid-specific-guidelines">pyNSID-specific guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#contributing-code">Contributing code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-tests">Writing tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyNSID</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Guidelines for Contribution</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/contribution_guidelines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="guidelines-for-contribution">
+<h1>Guidelines for Contribution<a class="headerlink" href="#guidelines-for-contribution" title="Permalink to this headline">¶</a></h1>
+<p>We would like to thank you and several others who have offered / are willing to contribute their code.
+We are more than happy to add your code to this project.
+Just as we strive to ensure that you get the best possible software from us, we ask that you do the same for others.
+We do NOT ask that your code be as efficient as possible. Instead, we have some simpler and easier requests.
+We have compiled a list of best practices below with links to additional information.
+If you are confused or need more help, please feel free to <a class="reference external" href="./contact.html">contact us</a>.</p>
+<div class="section" id="before-you-begin">
+<h2>Before you begin<a class="headerlink" href="#before-you-begin" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>All functionality in pyNSID revolves around the <a class="reference external" href="../nsid.html">N-Dimensional Spectroscopic and Imaging Data (NSID)</a> model
+and its implementation into HDF5 files. Data is read from HDF5 files, processed, and written back to it.
+Therefore, it will be much easier to understand the rationale for certain practices in pyNSID once NSID is understood.</p></li>
+<li><p><a class="reference external" href="./contact.html">Get in touch</a> with us to be added to the weekly hackathon so we can coordinate development activities with you.</p></li>
+</ol>
+</div>
+<div class="section" id="structuring-code">
+<h2>Structuring code<a class="headerlink" href="#structuring-code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-guidelines">
+<h3>General guidelines<a class="headerlink" href="#general-guidelines" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Encapsulate independent sections of your code into functions that can be used individually if required.</p></li>
+<li><p>Ensure that your code (functions) is well documented (<a class="reference external" href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">numpy format</a>)
+- expected inputs and outputs, purpose of functions</p></li>
+<li><p>Please avoid very short names for variables like <code class="docutils literal notranslate"><span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">k</span></code>. This makes it challenging to follow code, find and fix bugs.</p></li>
+<li><p>Ensure that your code works in python 2.7 and python 3.7</p></li>
+<li><p>Please consider using packages that are easy to install on Windows, Mac, and Linux.
+It is quite likely that packages included within Anaconda (has a comprehensive list packages for science and data analysis + visualization) can handle most needs.
+If this is not possible, try to use packages that are easy to to install (pip install).
+If even this is not possible, try to use packages that at least have conda installers.</p></li>
+<li><p>Follow best practices for <a class="reference external" href="https://www.datacamp.com/community/tutorials/pep8-tutorial-python-code">PEP8 compatibility</a>.
+The easiest way to ensure compatibility is to set it up in your code editor.
+<a class="reference external" href="https://blog.jetbrains.com/pycharm/2013/02/long-awaited-pep-8-checks-on-the-fly-improved-doctest-support-and-more-in-pycharm-2-7/">PyCharm</a> does this by default.
+So, as long as PyCharm does not raise many warning, your code is beautiful!</p></li>
+</ul>
+</div>
+<div class="section" id="pynsid-specific-guidelines">
+<h3>pyNSID-specific guidelines<a class="headerlink" href="#pynsid-specific-guidelines" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Engineering / science-agnostic tools fit better into pyNSID while scientific functionality go into pycroscopy.</p></li>
+<li><p>Please ensure that your code files fit into our package structure (<code class="docutils literal notranslate"><span class="pre">io</span></code>, <code class="docutils literal notranslate"><span class="pre">processing</span></code>, <code class="docutils literal notranslate"><span class="pre">viz</span></code>)</p></li>
+<li><p>Once you decide where your code will sit, please use relative import statements instead of absolute / external paths.
+For example, if you are contributing code for a new submodule within <code class="docutils literal notranslate"><span class="pre">pyNSID.io</span></code>, you will need to turn your import statements and code from something like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyNSID</span> <span class="k">as</span> <span class="nn">nsid</span>
+<span class="o">...</span>
+<span class="n">nsid</span><span class="o">.</span><span class="n">hdf_utils</span><span class="o">.</span><span class="n">print_tree</span><span class="p">(</span><span class="n">hdf_file_handle</span><span class="p">)</span>
+<span class="n">my_dataset</span> <span class="o">=</span> <span class="n">nsid</span><span class="o">.</span><span class="n">NSIDataset</span><span class="p">(</span><span class="n">my_hdf5_dataset</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.hdf_utils</span> <span class="kn">import</span> <span class="n">print_tree</span>
+<span class="kn">from</span> <span class="nn">.nsi_data</span> <span class="kn">import</span> <span class="n">NSIDataset</span>
+<span class="o">...</span>
+<span class="n">print_tree</span><span class="p">(</span><span class="n">hdf_file_handle</span><span class="p">)</span>
+<span class="n">my_dataset</span> <span class="o">=</span> <span class="n">NSIDataset</span><span class="p">(</span><span class="n">my_hdf5_dataset</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>You can look at our code in our <a class="reference external" href="https://github.com/pycroscopy/pyNSID">GitHub project</a> to get an idea of how we organize, document, and submit our code.</p>
+</div>
+</div>
+<div class="section" id="contributing-code">
+<h2>Contributing code<a class="headerlink" href="#contributing-code" title="Permalink to this headline">¶</a></h2>
+<p>We recommend that you follow the steps below. Again, if you are ever need help, please contact us:</p>
+<ol class="arabic simple">
+<li><p>Learn <code class="docutils literal notranslate"><span class="pre">git</span></code> if you are not already familiar with it. See our <a class="reference external" href="./external_guides.html">compilation of tutorials and guides</a>, especially <a class="reference external" href="https://github.com/pycroscopy/pyUSID/blob/master/docs/Using%20PyCharm%20to%20manage%20repository.pdf">this one</a>.</p></li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">fork</span></code> of pyNSID - this creates a separate copy of the entire pyNSID repository under your user ID.
+For more information see <a class="reference external" href="https://help.github.com/articles/fork-a-repo/">instructions here</a>.</p></li>
+<li><p>Once inside your own fork, you can either work directly off <code class="docutils literal notranslate"><span class="pre">master</span></code> or create a new branch.</p></li>
+<li><p>Add / modify code</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Commit</span></code> your changes (equivalent to saving locally on your laptop). Do this regularly.</p></li>
+<li><p>Repeat steps 4-5.</p></li>
+<li><p>After you reach a certain milestone, <code class="docutils literal notranslate"><span class="pre">push</span></code> your commits to your <code class="docutils literal notranslate"><span class="pre">remote</span> <span class="pre">branch</span></code>.
+This synchronizes your changes with the GitHub website and is similar to the Dropbox website /service making note of changes in your documents.
+To avoid losing work due to problems with your computer, consider <code class="docutils literal notranslate"><span class="pre">pushing</span> <span class="pre">commits</span></code> once at least every day / every few days.</p></li>
+<li><p>Repeat steps 4-7 till you are ready to have your code added to the parent pyNSID repository.
+At this point, <a class="reference external" href="https://help.github.com/articles/creating-a-pull-request-from-a-fork/">create a pull request</a>.
+Someone on the development team will review your <code class="docutils literal notranslate"><span class="pre">pull</span> <span class="pre">request</span></code>. If any changes are req and then <code class="docutils literal notranslate"><span class="pre">merge</span></code> these changes to <code class="docutils literal notranslate"><span class="pre">master</span></code>.</p></li>
+</ol>
+</div>
+<div class="section" id="writing-tests">
+<h2>Writing tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h2>
+<p>Software can become complicated very quickly through a complex interconnected web of dependencies, etc.
+Adding or modifying code at one location may break some use case or code in a different location.
+Unit tests are short functions that test to see if functions / classes respond in the expected way given some known inputs.
+Unit tests are a good start for ensuring that you spend more time using code than fixing it. New functions / classes must be accompanied with unit tests.</p>
+<p>Additionally, examples on how to use the new code must also be added so others are aware about how to use the code.
+Fortunately, it is rather straightforward to <a class="reference external" href="./unit_tests_to_examples.html">turn unit tests into examples</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contact.html" class="btn btn-neutral float-right" title="Contact us" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="nsid.html" class="btn btn-neutral float-left" title="NSID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Suhas Somnath, Gerd Duscher, Rama K. Vasudevan, Raj Giridhar, and contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
